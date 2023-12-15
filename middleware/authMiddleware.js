@@ -1,5 +1,7 @@
 import JWT from "jsonwebtoken";
 
+//-Auth Middelware:
+
 export const userAuth = async (req, res, next) => {
     const authHeader = req?.headers?.authorization;
 
