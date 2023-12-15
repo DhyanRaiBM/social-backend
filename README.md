@@ -1,5 +1,4 @@
-
-UpQuarium Backend:
+# UpQuarium Backend
 
 Backend repository for UpQuarium, a social media application developed with MERN stack.
 
@@ -20,7 +19,9 @@ Backend repository for UpQuarium, a social media application developed with MERN
 - **Mongoose** 
 - **JWT**  
 
-Stay tuned for more updates as i continue to develop UpQuarium!
+## Live Demo
+
+Stay tuned for more updates as I continue to develop UpQuarium!
 
 ---
-**Note:** UpQuarium is currently under development.
+**Note:** UpQuarium is currently under development. Check out a demo of UpQuarium [here](https://upquarium-social.netlify.app/).
