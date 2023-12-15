@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .card {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+      }
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+      .hideBtn {
+        display: none;
+      }
+      .showBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(1, 116, 210, 0.971);
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+      .showBtn:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">
+        <span id="statusIcon"><%= obj.icon %></span>
+      </div>
+      <div id="statusMessage" class="<%=obj.class %>"><%= obj.message %></div>
+      <a href="http://localhost:3000/login" id="btn" class="<%= obj.btnClass %>"
+        >Login</a
+      >
+    </div>
+  </body>
+</html>
